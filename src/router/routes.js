@@ -1,6 +1,4 @@
-import Hello from '../pages/Hello.vue'
 import Welcome from '../pages/welcome.vue'
-import List from '../pages/list.vue'
 import Record from '../pages/record.vue'
 import Friends from '../pages/friends.vue'
 import Find from '../pages/find.vue'
@@ -16,16 +14,6 @@ const routes = [
     path: '/record',
     name: 'Record',
     component: Record
-  },
-  {
-    path: '/list',
-    name: 'List',
-    component: List
-  },
-  {
-    path: '/Hello',
-    name: 'Hello',
-    component: Hello
   },
   {
     path: '/find',

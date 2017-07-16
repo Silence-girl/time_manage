@@ -1,5 +1,6 @@
 <template>
   <div>
+    <time-header fixed></time-header>
     <div class="record-banner">
       <div class="tab-box">
         <button type="button" class="active">待完成</button>
@@ -15,11 +16,10 @@
         </div>
       </li>
     </ul>
-    <dm-footer fixed></dm-footer>
   </div>
 </template>
 <script>
-  import footNav from '../components/footer/footer.vue'
+  import header from '../components/header/header.vue'
 
   export default {
     data () {
@@ -46,11 +46,11 @@
       }
     },
     components: {
-      'dm-footer': footNav
+      'time-header': header
     }
   }
 </script>
-<style>
+<style scoped>
   .record-banner{
     width: 100%;
     height: 12.57rem;
@@ -72,7 +72,7 @@
     color: #fff;
   }
   .record-list{
-    margin: 0 .89rem 4rem;
+    margin: 0 .89rem .83rem;
     padding: 0;
   }
   .record-list>li{
